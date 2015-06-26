@@ -10,8 +10,19 @@
 //===============================================================================
 // VARIABLES
 //===============================================================================
-$paper:  white;
-$ink:    black;
+$yellow: #F2DB00;
+$coral: #FF5754;
+$orange: #FF972A;
+$grey: #CACCD9;
+$midgrey: #555570;
+$ink: #000030;
+$purple: #7700FF;
+
+
+
+$short: 0.3s;
+$long: 0.85s;
+$vLong: 1.4s;
 
 //===============================================================================
 // BASCIS
@@ -30,15 +41,134 @@ ul {
   list-style: none;
 }
 
-html,
-body {
-  background-color: $paper;
-  color: $ink;
-  font-family: sans-serif;
-  line-height: 1.4;
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: $coral;
+	color: $ink;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4em;
+	font-family: 'Oswald', helvetica, arial, sans-serif;
+	font-weight: 400;
 }
+
+
 
 //===============================================================================
 // STYLES
 //===============================================================================
+
+header {
+	height: 4em;
+	background-color: white;
+	color: $coral;
+	position: absolute;
+	top: 0;
+	width:	100%;
+}
+
+.back-image {
+	opacity: 0.1;
+	width: 100%;
+	height: 100%;	
+	position:	absolute;
+	top: 15em;
+
+	img {
+		width: 80%;
+	}
+}
+
+.main {
+	position:	absolute;
+	top: 4em;
+	text-align: center;
+	padding: 1.33em 0 0 0;
+	width: 80%;
+	left: 10%;
+	height: 100%;
+	
+	@media screen and (min-width: 450px) {
+		padding-top: 6em;
+		width: 40%;
+		left: 30%;
+	}
+}
+
+.main-shoot {
+	width:	100%;
+	height: 3em;
+	background-color: $ink;
+	color: $yellow;
+	border: none;
+	border-bottom: solid 2px white;
+	font-size: 1.33em;
+	transition: all 0.2s ease;
+
+	&:hover {
+		background-color: $yellow;
+		color: $coral;
+	}
+}
+
+.main-snap-form {
+ width: 100%;
+
+	input {
+	 	width: 100%;
+	 	background-color: white;
+	 	border: none;
+	 	border-bottom: solid 2px $ink;
+	 	height: 3em;
+	 	margin-bottom: 1em;
+	 	color: $ink;
+	 	text-align: center;
+	 	font-size: 1.33em;
+	 	border-radius: 0;
+
+	 	@include placeholder {
+	 		color: $coral;
+	 	}
+ 	}
+
+}
+
+
+.shutdown-form {
+	position: absolute;
+	bottom: 4em;
+	height: 4em;
+	width: 100%;
+
+}
+
+.shutdown-btn {
+	width:	6em;
+	height: 3em;
+	border-radius: 10em;
+	border: 1px solid $ink;
+	background-color: white;
+	position: relative;
+	cursor: pointer;
+
+	transition: all 0.2s ease;
+
+	img {
+		width: 1.5em;
+		margin-top: 0.2em;
+	}
+
+	&:hover {
+		background-color: $ink;
+	}
+
+}
+
+
+
+
+
+
+
 

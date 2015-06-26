@@ -19,7 +19,7 @@ app.post("/photo", function(req, res){
         console.log(req.body);
 
         //will need to manually add the img folder to my Pi
-        var path = __dirname + '/src/img/' + Date.now();
+        var path = __dirname + '/src/images/' + Date.now();
         // var path = __dirname + '/src/img/';
         
         fs.mkdirSync(path);

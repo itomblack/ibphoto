@@ -189,21 +189,131 @@ table {
 td, th {
   padding: 0; }
 
-/* line 22, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+/* line 33, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
 *, *::before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
 
-/* line 28, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+/* line 39, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
 ul {
   padding: 0;
   list-style: none; }
 
-/* line 34, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+/* line 44, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
 html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #FF5754;
+  color: #000030;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  font-weight: 400; }
+
+/* line 62, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+header {
+  height: 4em;
   background-color: white;
-  color: black;
-  font-family: sans-serif;
-  line-height: 1.4; }
+  color: #FF5754;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 71, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.back-image {
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15em; }
+  /* line 78, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+  .back-image img {
+    width: 80%; }
+
+/* line 83, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.main {
+  position: absolute;
+  top: 4em;
+  text-align: center;
+  padding: 1.33em 0 0 0;
+  width: 80%;
+  left: 10%;
+  height: 100%; }
+  @media screen and (min-width: 450px) {
+    .main {
+      padding-top: 6em;
+      width: 40%;
+      left: 30%; } }
+
+/* line 99, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.main-shoot {
+  width: 100%;
+  height: 3em;
+  background-color: #000030;
+  color: #F2DB00;
+  border: none;
+  border-bottom: solid 2px white;
+  font-size: 1.33em;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  /* line 109, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+  .main-shoot:hover {
+    background-color: #F2DB00;
+    color: #FF5754; }
+
+/* line 115, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.main-snap-form {
+  width: 100%; }
+  /* line 118, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+  .main-snap-form input {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-bottom: solid 2px #000030;
+    height: 3em;
+    margin-bottom: 1em;
+    color: #000030;
+    text-align: center;
+    font-size: 1.33em;
+    border-radius: 0; }
+    /* line 47, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/_mixins.scss */
+    .main-snap-form input.placeholder {
+      color: #FF5754; }
+    /* line 48, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/_mixins.scss */
+    .main-snap-form input:-moz-placeholder {
+      color: #FF5754; }
+    /* line 49, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/_mixins.scss */
+    .main-snap-form input::-moz-placeholder {
+      color: #FF5754; }
+    /* line 50, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/_mixins.scss */
+    .main-snap-form input::-webkit-input-placeholder {
+      color: #FF5754; }
+
+/* line 138, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.shutdown-form {
+  position: absolute;
+  bottom: 4em;
+  height: 4em;
+  width: 100%; }
+
+/* line 146, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+.shutdown-btn {
+  width: 6em;
+  height: 3em;
+  border-radius: 10em;
+  border: 1px solid #000030;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  /* line 157, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+  .shutdown-btn img {
+    width: 1.5em;
+    margin-top: 0.2em; }
+  /* line 162, /Users/BIT/Documents/Design/Repos/ibphoto/src/sass/styles.scss */
+  .shutdown-btn:hover {
+    background-color: #000030; }

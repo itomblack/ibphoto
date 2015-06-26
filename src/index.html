@@ -6,20 +6,32 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>IB-Photo</title>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
 	<body>
-		<form action="photo" method="post">
-			Frames:<br>
-			<input type="text" name="frames">
-			<br>
-			Interval:<br>
-			<input type="text" name="interval">
 
-			<button type="submit">Shoot</button>
-		</form>
+		<header>
+			<H1>SNAP</H1>
+		</header>
 
+		<section class="main">
+
+			<form class="main-snap-form" action="photo" method="post">
+				<input type="number" name="frames" placeholder="Frames">
+				<input type="number" name="interval" placeholder="Interval">
+				<button class="main-shoot" type="submit">Shoot</button>
+			</form>
+
+
+			<form class="shutdown-form" action="shutdown" method="post">
+				<button class="shutdown-btn" type="submit">
+					<img src="/img/power-icon.svg"/>
+				</button>
+			</form>
+
+		</section>
 		
 
 	</body>
